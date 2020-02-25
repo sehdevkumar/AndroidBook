@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="1dp"
+    android:background="#dcc"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:background="#434F8D"
+        android:padding="2dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:id="@+id/showItem"
+            android:src="@drawable/ic_stat_name"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="ADD New Story"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Title"
+            android:textColor="#000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/title"
+            android:hint="Type Title...."
+            android:background="@drawable/box_back"
+            android:foregroundGravity="center"
+            android:inputType="text"
+            android:lines="2"
+            android:minLines="2"
+            android:maxLines="3"
+            android:layout_width="match_parent"
+            android:gravity="left|center_horizontal"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Write Your Story"
+            android:textColor="#000"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/story"
+            android:padding="10dp"
+            android:lines="15"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:minLines="10"
+            android:gravity="top|left"
+            android:scrollbars="vertical"
+            android:hint="story..."
+            android:background="@drawable/box_back"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background="#dcc"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Add"
+            android:id="@+id/add"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/box_back"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/update"
+            android:background="@drawable/box_back"
+            android:layout_width="wrap_content"
+            android:text="Update"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/clear"
+            android:background="@drawable/box_back"
+            android:layout_width="wrap_content"
+            android:text="Clear"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
